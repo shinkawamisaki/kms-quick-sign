@@ -1,0 +1,42 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# エディタ/一時
+*.log
+*.tmp
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# 環境ファイル
+.env
+.env.*
+
+# アーカイブ等
+*.zip
+*.tar
+*.tar.gz
+
+# --- tamper-stamp 生成物（コミットしない） ---
+# 内容ハッシュ/署名/スタンプ/公開鍵（AWSアカウントや鍵ARNが滲むので基本非公開）
+MANIFEST.sha256
+MANIFEST.sha256.sig
+MANIFEST.sha256.sig.b64
+MANIFEST_STAMP.bundle
+MANIFEST_STAMP.bundle.sig
+MANIFEST_STAMP.bundle.sig.b64
+STAMP.json
+KMS_PUBLIC_KEY.pem
+
+# サブフォルダでも同名を無視したい場合（Git 2.0+）
+**/MANIFEST.sha256
+**/MANIFEST.sha256.sig
+**/MANIFEST.sha256.sig.b64
+**/MANIFEST_STAMP.bundle
+**/MANIFEST_STAMP.bundle.sig
+**/MANIFEST_STAMP.bundle.sig.b64
+**/STAMP.json
+**/KMS_PUBLIC_KEY.pem
